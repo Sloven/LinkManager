@@ -408,10 +408,6 @@
     <None Include="Properties\PublishProfiles\local iis.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\BusinessLogic\Services.csproj">
-      <Project>{F62E6AB5-2718-4F48-97ED-191CE164C0BF}</Project>
-      <Name>Services</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Infrastructure\DataAccess\DataAccess.csproj">
       <Project>{6996b643-8740-44d5-a33b-3db57eb6530e}</Project>
       <Name>DataAccess</Name>
@@ -419,6 +415,10 @@
     <ProjectReference Include="..\Infrastructure\Entities\Entities.csproj">
       <Project>{1be96ddf-2b79-4b2a-b7b6-d212f1627987}</Project>
       <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure\Services\Services.csproj">
+      <Project>{f62e6ab5-2718-4f48-97ed-191ce164c0bf}</Project>
+      <Name>Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

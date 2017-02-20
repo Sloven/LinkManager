@@ -120,10 +120,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\Infrastructure\BusinessLogic\Services.csproj">
-      <Project>{F62E6AB5-2718-4F48-97ED-191CE164C0BF}</Project>
-      <Name>Services</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Infrastructure\DataAccess\DataAccess.csproj">
       <Project>{6996b643-8740-44d5-a33b-3db57eb6530e}</Project>
       <Name>DataAccess</Name>
@@ -131,6 +127,10 @@
     <ProjectReference Include="..\..\Infrastructure\Entities\Entities.csproj">
       <Project>{1BE96DDF-2B79-4B2A-B7B6-D212F1627987}</Project>
       <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Services\Services.csproj">
+      <Project>{f62e6ab5-2718-4f48-97ed-191ce164c0bf}</Project>
+      <Name>Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\WebAPI\WebAPI.csproj">
       <Project>{19909e35-5039-4c05-b3c7-bdb00cb48910}</Project>
