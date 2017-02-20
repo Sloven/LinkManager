@@ -3,7 +3,7 @@ Back-end for Link Manager with web API.
 
 # What is all about.
 This project is about resource managent aka links. It should do:
- - Bookmarks: easy to search bookmarked resources over the internet. Simple url like www.lm.com/username/ should open a list of 
+ - Bookmarks: easy to search bookmarked resources over the internet. Simple url like www.linkmanagerveryshortdomain.com/username/ should open a list of 
  saved bookmarks for that username.
  - URL rules: Password protection, Delayed access, email protection etc.
  - URL shortener. 
