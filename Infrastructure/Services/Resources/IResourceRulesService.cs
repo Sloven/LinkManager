@@ -1,7 +1,7 @@
 using System;
 using Entities;
 
-namespace BusinessLogic.Links
+namespace Services.Resources
 {
     public interface IResourceRulesService
     {

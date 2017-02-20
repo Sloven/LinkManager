@@ -1,4 +1,4 @@
-namespace BusinessLogic.Helpers
+namespace Services.Helpers
 {
     public interface IURLShortener
     {

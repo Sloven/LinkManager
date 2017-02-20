@@ -1,6 +1,6 @@
 using Entities;
 
-namespace BusinessLogic.Links
+namespace Services.Resources
 {
     public interface IRulesService
     {

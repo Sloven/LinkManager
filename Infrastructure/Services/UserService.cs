@@ -8,7 +8,7 @@ using DataAccess;
 using DataAccess.Abstractions;
 using Entities;
 
-namespace BusinessLogic
+namespace Services
 {
     public class UserService
     {

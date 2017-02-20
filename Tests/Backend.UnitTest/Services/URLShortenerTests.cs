@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BusinessLogic.Helpers;
 using NUnit.Framework;
+using Services.Helpers;
 
 namespace Backend.UnitTest.Services
 {

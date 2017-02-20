@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using BusinessLogic.Links;
+using Services.Resources;
 using DataAccess;
 using DataAccess.Abstractions;
 using DataAccess.Contexts;

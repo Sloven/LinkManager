@@ -1,7 +1,7 @@
 ﻿using System;
 using DataAccess.Abstractions;
 
-namespace BusinessLogic.Links
+namespace Services.Resources
 {
     public abstract class AbstractBasicService<T>
     {

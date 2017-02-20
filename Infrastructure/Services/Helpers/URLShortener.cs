@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace BusinessLogic.Helpers
+namespace Services.Helpers
 {
     public class URLShortener : IURLShortener
     {

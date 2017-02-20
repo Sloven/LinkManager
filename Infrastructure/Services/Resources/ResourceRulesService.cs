@@ -8,7 +8,7 @@ using DataAccess;
 using DataAccess.Abstractions;
 using Entities;
 
-namespace BusinessLogic.Links
+namespace Services.Resources
 {
     public class ResourceRulesService: IResourceRulesService
     {

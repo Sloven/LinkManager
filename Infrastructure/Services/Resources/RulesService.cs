@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BusinessLogic.Links;
+using Services.Resources;
 using DataAccess;
 using DataAccess.Abstractions;
 using Entities;
 
-namespace BusinessLogic.Links
+namespace Services.Resources
 {
     public class RulesService: AbstractBasicService<Rule>, IRulesService
     {
