@@ -1,0 +1,7 @@
+packages/
+artifacts/
+BuildProcessTemplates/
+bin/
+obj/
+
+

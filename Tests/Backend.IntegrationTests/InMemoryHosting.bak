@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Formatting;
+using System.Net.Http.Headers;
+using System.Security.Policy;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web.Http;
+using Microsoft.Owin.Testing;
+using NUnit.Framework;
+using NUnit.Framework.Internal;
+using Owin;
+using WebAPI;
+
+namespace Backend.IntegrationTests
+{
+    [TestFixture]
+    public class InMemoryHosting: IDisposable
+    {
+        public readonly string _baseUrl;
+        public readonly string _tokenUrl;
+        private readonly TestServer _server;
+
+        public HttpClient Client { get; private set; }
+        protected HttpRequestMessage Request;
+
+        public InMemoryHosting()
+        {
+            _baseUrl = "http://localhost/api/";
+            _tokenUrl = "http://localhost/oauth/token";
+        }
+
+        [OneTimeSetUp]
+        protected void RunBeforeAnyTests()
+        {
+            var server = TestServer.Create(app =>
+            {
+                var config = new HttpConfiguration();
+                var startup = new Startup();
+                config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
+
+                startup.Configuration(app, config);
+
+                app.UseWebApi(config);
+            });
+
+            Client = server.HttpClient;
+            Client.BaseAddress = new Uri(_baseUrl);
+        }
+
+        [OneTimeTearDown]
+        protected void RunAfterAnyTests()
+        {
+            _server?.Dispose();
+        }
+
+        [TearDown]
+        protected void DisposeRequest()
+        {
+            Request?.Dispose();
+        }
+
+        public void Dispose()
+        {
+            _server?.Dispose();
+        }
+    }
+}
+
+
