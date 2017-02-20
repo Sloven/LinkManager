@@ -22,8 +22,9 @@ This project is about resource managent aka links. It should do:
  - For initial DB creation, in "Package Manager Console" select "Infrastructure/DataAccess" and run 2 commands:
  
       update-database -ConfigurationTypeName DemoConfiguration
-      update-database -ConfigurationTypeName DefaultConfiguration
       
+      update-database -ConfigurationTypeName DefaultConfiguration
+            
    Databases should exist on your local server.
 
 4) Run tests. That's it.
