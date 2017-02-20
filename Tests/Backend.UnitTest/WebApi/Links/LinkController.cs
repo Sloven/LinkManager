@@ -7,12 +7,12 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using BusinessLogic.Links;
 using Entities;
 using Microsoft.AspNet.Identity;
 using NSubstitute;
 using NUnit.Framework;
 using WebAPI.Controllers;
+using Services.Resources;
 
 namespace Backend.UnitTest.WebApi.Links
 {

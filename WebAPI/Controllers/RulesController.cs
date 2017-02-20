@@ -6,8 +6,7 @@ using System.Net.Http;
 using System.Web;
 //using System.Web;
 using System.Web.Http;
-using BusinessLogic;
-using BusinessLogic.Links;
+using Services.Resources;
 using Microsoft.Owin;
 
 namespace WebAPI.Controllers

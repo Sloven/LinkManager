@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Entities;
 
-namespace BusinessLogic.Links
+namespace Services.Resources
 {
     public interface IResourcesService
     {

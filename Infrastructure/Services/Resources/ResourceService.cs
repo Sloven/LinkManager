@@ -6,10 +6,10 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BusinessLogic.Links;
+using Services.Resources;
 using DataAccess.Abstractions;
 
-namespace BusinessLogic.Links
+namespace Services.Resources
 {
    public class ResourceService: AbstractBasicService<Resource>, IResourcesService
     {

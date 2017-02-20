@@ -5,8 +5,8 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
-using BusinessLogic;
-using BusinessLogic.Links;
+using Services;
+using Services.Resources;
 using DataAccess;
 
 namespace WebAPI.Controllers

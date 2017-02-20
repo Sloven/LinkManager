@@ -10,9 +10,7 @@ using DataAccess;
 using Entities;
 using Microsoft.ApplicationInsights.WindowsServer;
 using Microsoft.AspNet.Identity;
-using Newtonsoft.Json;
-using BusinessLogic;
-using BusinessLogic.Links;
+using Services.Resources;
 
 namespace WebAPI.Controllers
 {
@@ -53,10 +51,10 @@ namespace WebAPI.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost]
-        [Route("public")]//"/{userName}")]
-        //public IEnumerable<Resource> Public([FromBody]string userName)
-        public IEnumerable<Resource> Public(dynamic userName)
+        [HttpGet]
+        [Route("public/{userName}")]
+        public IEnumerable<Resource> Public([FromUri]string userName)
+        //public IEnumerable<Resource> Public(dynamic userName)
         {
             string uname = userName;
             try

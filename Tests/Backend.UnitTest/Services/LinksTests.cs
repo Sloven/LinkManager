@@ -7,9 +7,8 @@ using Backend.UnitTest.Fakes;
 using DataAccess;
 using Entities;
 using WebAPI.Controllers;
-using BusinessLogic;
-using BusinessLogic.Links;
 using NUnit.Framework;
+using Services.Resources;
 
 namespace Backend.UnitTest.WebApi
 {

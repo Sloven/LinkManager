@@ -7,8 +7,8 @@
     <ProjectGuid>{F62E6AB5-2718-4F48-97ED-191CE164C0BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BusinessLogic</RootNamespace>
-    <AssemblyName>BusinessLogic</AssemblyName>
+    <RootNamespace>Services</RootNamespace>
+    <AssemblyName>Services</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -73,14 +73,14 @@
   <ItemGroup>
     <Compile Include="Helpers\IURLShortener.cs" />
     <Compile Include="Helpers\URLShortener.cs" />
-    <Compile Include="ResourceServices\AbstractBasicService.cs" />
-    <Compile Include="ResourceServices\IResourceRulesService.cs" />
-    <Compile Include="ResourceServices\IResourcesService.cs" />
-    <Compile Include="ResourceServices\IRulesService.cs" />
-    <Compile Include="ResourceServices\ResourceRulesService.cs" />
-    <Compile Include="ResourceServices\ResourceService.cs" />
+    <Compile Include="Resources\AbstractBasicService.cs" />
+    <Compile Include="Resources\IResourceRulesService.cs" />
+    <Compile Include="Resources\IResourcesService.cs" />
+    <Compile Include="Resources\IRulesService.cs" />
+    <Compile Include="Resources\ResourceRulesService.cs" />
+    <Compile Include="Resources\ResourceService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResourceServices\RulesService.cs" />
+    <Compile Include="Resources\RulesService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
