@@ -20,6 +20,7 @@ This project is about resource managent aka links. It should do:
    migrations configurations: DemoConfiguration and DefaultConfiguration. They should be used to apply appropriate changes to the right database.
 
  - For initial DB creation, in "Package Manager Console" select "Infrastructure/DataAccess" and run 2 commands:
+ 
       update-database -ConfigurationTypeName DemoConfiguration
       update-database -ConfigurationTypeName DefaultConfiguration
       
