@@ -1,10 +1,14 @@
-# LinkManager
-Back-end for Link Manager with web API
+# LinkManager.
+Back-end for Link Manager with web API.
 
-Install.
-
-
-
+# What is all about.
+This project is about resource managent aka links. It should do:
+ - Bookmarks: easy to search bookmarked resources over the internet. Simple url like www.lm.com/username/ should open a list of 
+ saved bookmarks for that username.
+ - URL rules: Password protection, Delayed access, email protection etc.
+ - URL shortener. 
+ 
+# Install.
 
 1) Build the solution.
 
@@ -23,6 +27,5 @@ Install.
 
 4) Run tests. That's it.
    
- 
 This repository has no any Front-end and mostly should be used from Tests or from Fiddler. 
 Front-end repository is at https://github.com/Sloven/LinkManagerWebApp
