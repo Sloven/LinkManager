@@ -3,5 +3,5 @@ artifacts/
 BuildProcessTemplates/
 bin/
 obj/
-.vs/
-
+.vs/git 
+web.config
