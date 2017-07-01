@@ -34,16 +34,7 @@ namespace WebAPI
             // Web API routes
             config.MapHttpAttributeRoutes();
 
-            //EnableCrossSiteRequests(config);
             config.Routes.MapHttpRoute("DefaultApiAction", "Api/{controller}/{action}");
-
-            //config.Routes.MapHttpRoute("DefaultApiActionParam", "Api/{controller}/{action}/{userName}");
-
-            //config.Routes.MapHttpRoute("DefaultApiWithId", "Api/{controller}/{id}", new { id = RouteParameter.Optional }, new { id = @"\d+" });
-            //config.Routes.MapHttpRoute("DefaultApiWithAction", "Api/{controller}/{action}");
-            //config.Routes.MapHttpRoute("DefaultApiActionParam", "Api/{controller}/{action}/{param}", new { param = RouteParameter.Optional });
-            //config.Routes.MapHttpRoute("DefaultApiGet", "Api/{controller}", new { action = "Get" }, new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) });
-            //config.Routes.MapHttpRoute("DefaultApiPost", "Api/{controller}", new { action = "Post" }, new { httpMethod = new HttpMethodConstraint(HttpMethod.Post) });
         }
     }
 }
