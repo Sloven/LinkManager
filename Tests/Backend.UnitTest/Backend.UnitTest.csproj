@@ -103,6 +103,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Services\ResourceValidation.cs" />
     <Compile Include="Services\RoutingTests.cs" />
     <Compile Include="DataAccess\FakeDbSet.cs" />
     <Compile Include="Fakes\FakeBasicCRUD.cs" />

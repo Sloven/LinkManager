@@ -41,12 +41,15 @@ namespace WebAPI.Providers
             //    return;
             //}
 
+            if(context.Request.Headers.ContainsKey("Demokey"))
+                context.Options.AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(30);
+
             ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(userManager, "JWT");
 
             var ticket = new AuthenticationTicket(oAuthIdentity, null);
 
             context.Validated(ticket);
-
         }
+
     }
 }

@@ -55,7 +55,7 @@ namespace WebAPI
         /// <returns></returns>
         private static IdentityDbContext<ApplicationUser> defineDBContext(IOwinContext context)
         {
-            if(context?.Request?.Headers["isdemo"] != null)
+            if(context?.Request?.Headers["Demokey"] != null)
                 return context.Get<DemoOWINDBContext>();
             else
                 return context.Get<OWINDBContext>();

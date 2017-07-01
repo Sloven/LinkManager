@@ -14,7 +14,7 @@ namespace WebAPI.Controllers
     [Authorize]
     public class RulesController : ApiController
     {
-        private IRulesService rs;// = RulesBR.Instance;
+        private IRulesService rs;
 
         public RulesController(IRulesService _rs)
         {

@@ -10,6 +10,7 @@ using DataAccess;
 using Entities;
 using Microsoft.ApplicationInsights.WindowsServer;
 using Microsoft.AspNet.Identity;
+using Newtonsoft.Json;
 using Services.Resources;
 
 namespace WebAPI.Controllers
@@ -54,7 +55,6 @@ namespace WebAPI.Controllers
         [HttpGet]
         [Route("public/{userName}")]
         public IEnumerable<Resource> Public([FromUri]string userName)
-        //public IEnumerable<Resource> Public(dynamic userName)
         {
             string uname = userName;
             try
@@ -76,8 +76,8 @@ namespace WebAPI.Controllers
             if(string.IsNullOrEmpty(URL))
                 return PrepareResponse(HttpStatusCode.BadRequest, "Wrong URL");
             
-            _ls.AddLink(CurrentUserId, URL);
-            return PrepareResponse(HttpStatusCode.OK, "");
+            var insertedResource = _ls.AddLink(CurrentUserId, URL);
+            return PrepareResponse(HttpStatusCode.OK, JsonConvert.SerializeObject(insertedResource));
         }
 
 

@@ -30,7 +30,7 @@ namespace WebAPI.DependencyResolution
 
         private IContainer defineContainer(HttpRequestMessage request)
         {
-            if (request.Headers.Contains("isDemo"))
+            if (request.Headers.Contains("Demokey"))
                 return _container.GetProfile("demoProfile").GetNestedContainer();
             else
                 return _container.GetProfile("appProfile").GetNestedContainer();
